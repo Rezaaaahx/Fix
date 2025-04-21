@@ -16,7 +16,7 @@ timeout 2 >nul 2>&1
 
 timeout 2 >nul 2>&1
 
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbprint" /v Start /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbprint" /v Start /t REG_DWORD /d 2 /f
 
 schtasks /Change /TN "Microsoft\Windows\Printing\EduPrintProv" /Enable >nul 2>&1
 schtasks /Change /TN "Microsoft\Windows\Printing\PrinterCleanupTask" /Enable >nul 2>&1
